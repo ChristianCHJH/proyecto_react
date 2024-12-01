@@ -1,0 +1,87 @@
+/* Contenedor principal de la página de inicio */
+.home-container {
+  background-color: #f8f9fa;
+  padding-top: 2rem;
+}
+
+/* Sección de bienvenida con gradiente */
+.welcome-section {
+  background: linear-gradient(45deg, #3f4290, #8c55d0);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.welcome-section p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+/* Carrusel de imágenes */
+.custom-carousel {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-carousel-img {
+  border-radius: 10px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Estilo de los productos en oferta */
+.product-card {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card-img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Estilo de los botones */
+.btn-sm {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+/* Paginación */
+.pagination {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Modal */
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .welcome-section {
+    padding: 2rem;
+  }
+
+  .product-card {
+    margin-bottom: 2rem;
+  }
+}

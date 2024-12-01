@@ -1,0 +1,61 @@
+/* Estilo principal para la sección del equipo */
+.my-8 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* Estilo de las tarjetas del equipo */
+.team-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #3940a5;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.social-icons .btn {
+    font-size: 1.5rem;
+    color: #007bff;
+    /* Color por defecto de los botones */
+}
+
+.social-icons .btn:hover {
+    color: #0056b3;
+    /* Color de hover en los iconos */
+}
+
+@media (max-width: 767px) {
+    .team-card {
+        margin-bottom: 1.5rem;
+    }
+}
